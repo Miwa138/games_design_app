@@ -4,9 +4,9 @@ import 'package:games_design/view/MainPage/friends.dart';
 import 'package:games_design/view/MainPage/games.dart';
 import 'package:games_design/view/MainPage/games_organizers_personal.dart';
 import 'package:games_design/view/MainPage/games_organizers_tournament.dart';
-import 'package:games_design/view/MainPage/home_page.dart';
-import 'package:games_design/view/MainPage/profile.dart';
 import 'package:games_design/view/MainPage/splash_screen.dart';
+import 'package:games_design/view/MainPage/profile.dart';
+
 
 
 
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       routes: {
         'game_page': (context) => const GamesPage(),
-        'home_page': (context) => const HomePage(),
+        'splash_screen': (context) => const SplashScreen(),
         'friends_page': (context) => const Friends_Page(),
         'profile_page': (context) => const ProfilePage(),
         'games_organizers_personal': (context) => const GamesOrganizers_Personal(),

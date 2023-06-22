@@ -1,11 +1,9 @@
-import 'dart:async';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/friends.dart';
+import 'package:games_design/view/MainPage/games.dart';
 import 'package:games_design/view/MainPage/home_page.dart';
-
-
-
-
+import 'package:games_design/view/MainPage/profile.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -14,59 +12,75 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
+
 class _SplashScreenState extends State<SplashScreen> {
-  startTime() {
-    Timer(Duration(seconds: 5), () async {
-      if (FirebaseAuth.instance.currentUser != null) {
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
-      }else
-      {
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => Container()));
-      }
+
+
+  void _incrementCounter() {
+    setState(() {
+
     });
   }
 
   @override
-  void initState() {
-    // TODO: implement initState
-
-   startTime();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Colors.orange,
-              Colors.teal,
-            ],
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
-            stops: [0.0, 1.0],
-            tileMode: TileMode.clamp,
-          ),
-        ),
-        child: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: DefaultTabController(
+        length: 4,
+        child: Scaffold(
+          bottomNavigationBar: menu(),
+          body: TabBarView(
             children: [
-              Text(
-                "Shop",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              Container(child: HomePage()),
+              Container(child: GamesPage()),
+              Container(child: Friends_Page()),
+              Container(child: ProfilePage()),
             ],
           ),
+          floatingActionButton: FloatingActionButton(
+            backgroundColor: Color(0xffbf3ae37),
+            onPressed: _incrementCounter,
+            tooltip: 'Increment',
+            child: const Icon(Icons.add),
+          ),
         ),
+
       ),
     );
   }
+
+  Widget menu() {
+    return Container(
+      color: Color(0xffb369b87),
+      child: const TabBar(
+        labelColor: Colors.white,
+        unselectedLabelColor: Colors.white70,
+        indicatorSize: TabBarIndicatorSize.tab,
+        indicatorPadding: EdgeInsets.all(5.0),
+        indicatorColor: Colors.green,
+        tabs: [
+          Tab(
+            icon: Icon(Icons.home_filled,),
+            text: ("Главная"),
+          ),
+          Tab(
+            icon: Icon(CupertinoIcons.game_controller_solid,),
+            text: ("Игры"),
+          ),
+          Tab(
+            icon: Icon(CupertinoIcons.person_2,),
+            text: ("Друзья"),
+          ),
+          Tab(
+            icon: Icon(CupertinoIcons.person_circle,),
+            text: ("Профиль"),
+          ),
+
+        ],
+      ),
+    );
+  }
+
 }
+
