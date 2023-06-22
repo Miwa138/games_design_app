@@ -35,52 +35,79 @@ class _MenuScreenState extends State<MenuScreen> {
               child: ListBody(
                 children: <Widget>[
                   Center(
-                    child: Table(
-                      children: [
-                        TableRow(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15),
-                              child: Text(
-                            'Дата/Время',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Container(
-                                decoration: const BoxDecoration(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20)),
-                                  color: Colors.black12,
-                                ),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(32.0, 0.0, 32.0, 0.0),
+                      child: Table(
+                        children: [
+                          TableRow(
+                            children: [
+                              const Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 15),
                                 child: Text(
-                                '05/05 10:00',
-                                style: TextStyle(color: Colors.white),
-                                )),
-                          ],
-                        ),
-                        TableRow(
-                          children: [
-                            const Padding(
-                              padding: EdgeInsets.all(5.0),
-                              child: Padding(
-                                padding: EdgeInsets.symmetric(horizontal: 10),
-                                child: Text(
-                            'Место',
-                            style: TextStyle(
+                              'Дата/Время',
+                              style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold),
                                 ),
                               ),
-                            ),
-                            Text(
-                              'Империя',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ],
-                        ),
-                      ],
+                              Container(
+                                  decoration: const BoxDecoration(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(20)),
+                                    color: Color(0xffb369b87),
+                                  ),
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(20),
+                                      ),
+                                      color: Color(0xffb57a797),
+                                    ),
+                                    child: const Center(
+                                        child: Padding(
+                                      padding: EdgeInsets.all(3.0),
+                                      child: Text(
+                                        '05/05 10:00',
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    )),
+                                  )),
+                            ],
+                          ),
+                          TableRow(
+                            children: [
+                              const Padding(
+                                padding: EdgeInsets.all(5.0),
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 10),
+                                  child: Text(
+                              'Место',
+                              style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                decoration: const BoxDecoration(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)),
+                                  color: Color(0xffb57a797),
+                                ),
+                                child: const Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.all(4.0),
+                                    child: Text(
+                                      'Империя',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Row(

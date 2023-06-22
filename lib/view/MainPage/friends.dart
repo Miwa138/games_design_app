@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/utils/button/button_game/button_widget.dart';
 
 class Friends_Page extends StatefulWidget {
   const Friends_Page({Key? key}) : super(key: key);
@@ -15,22 +16,12 @@ class _Friends_PageState extends State<Friends_Page> {
         centerTitle: true,
         title: const Text("Друзья"),
       ),
-      body: ListView(
-        children: <Widget>[
-          // const SearchScreen(),
-          SizedBox(
-
-            // child: ScrollScreen(),
-          ),
-          Container(
-            child: const Column(
-              children: [
-                // PlayerScreen(),
-                // CircleButton(),
-              ],
-            ),
-          ),
-        ],
+      body: Container(
+        child: const Column(
+          children: [
+            Button()
+          ],
+        ),
       ),
     );
   }

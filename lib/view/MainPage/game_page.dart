@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/utils/button/button_game/button_widget.dart';
 import 'package:games_design/view/MainPage/widgets/games_table.dart';
 import 'package:games_design/view/MainPage/widgets/pagination.dart';
 import 'package:games_design/view/MainPage/utils/elevation_button.dart';
@@ -20,7 +21,7 @@ class _GamePageState extends State<GamePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            ElevationButton(),
+            Button(),
             GamesTable(),
             Pagination(),
           ],
