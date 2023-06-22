@@ -1,9 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:games_design/view/MainPage/games_table.dart';
-import 'package:games_design/view/MainPage/widgets/pagination.dart';
-import 'package:games_design/view/MainPage/utils/ElevationButton.dart';
-import 'package:games_design/view/MainPage/utils/media_query_class.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,19 +10,28 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
-      body: Padding(
-        padding: EdgeInsets.only(top: 60),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            ElevationButton(),
-            GamesTable(),
-            Pagination(),
-          ],
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text("Главная"),
+      ),
+      body: ListView(
+        children: <Widget>[
+          // const SearchScreen(),
+          SizedBox(
+
+            // child: ScrollScreen(),
+          ),
+          Container(
+            child: const Column(
+              children: [
+                // PlayerScreen(),
+                // CircleButton(),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
 }
-

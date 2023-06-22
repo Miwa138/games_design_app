@@ -14,7 +14,7 @@ class Pagination extends StatelessWidget {
         children: [
           InkWell(
             onTap: (){},
-            child: const Icon(CupertinoIcons.arrowtriangle_left_fill, size: 20,),
+            child: const Icon(CupertinoIcons.arrowtriangle_left_fill, size: 18,),
           ),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
@@ -22,7 +22,7 @@ class Pagination extends StatelessWidget {
           ),
           InkWell(
             onTap: (){},
-            child: const Icon(CupertinoIcons.arrowtriangle_right_fill, size: 20,),
+            child: const Icon(CupertinoIcons.arrowtriangle_right_fill, size: 18,),
           )
         ],
       ),

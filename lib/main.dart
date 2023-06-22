@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:games_design/view/MainPage/friends.dart';
-import 'package:games_design/view/MainPage/games.dart';
+import 'package:games_design/view/MainPage/game_page.dart';
 import 'package:games_design/view/MainPage/games_organizers_personal.dart';
 import 'package:games_design/view/MainPage/games_organizers_tournament.dart';
-import 'package:games_design/view/MainPage/widgets/splash_screen.dart';
+import 'package:games_design/view/MainPage/widgets/menu_screen.dart';
 import 'package:games_design/view/MainPage/profile.dart';
 
 
@@ -27,15 +27,12 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      theme: ThemeData(appBarTheme: AppBarTheme(
-          backgroundColor: Color.fromRGBO(67, 187, 122, 1)
-      )),
       // themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: MenuScreen(),
       routes: {
-        'game_page': (context) => const GamesPage(),
-        'splash_screen': (context) => const SplashScreen(),
+        'game_page': (context) => const GamePage(),
+        'splash_screen': (context) => const MenuScreen(),
         'friends_page': (context) => const Friends_Page(),
         'profile_page': (context) => const ProfilePage(),
         'games_organizers_personal': (context) => const GamesOrganizers_Personal(),
