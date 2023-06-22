@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:games_design/view/MainPage/friends.dart';
-import 'package:games_design/view/MainPage/game_page.dart';
+import 'package:games_design/view/MainPage/game.dart';
 import 'package:games_design/view/MainPage/games_organizers_personal.dart';
 import 'package:games_design/view/MainPage/games_organizers_tournament.dart';
 import 'package:games_design/view/MainPage/widgets/menu_screen.dart';
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: MenuScreen(),
       routes: {
-        'game_page': (context) => const GamePage(),
+        'game_page': (context) => const Game(),
         'splash_screen': (context) => const MenuScreen(),
         'friends_page': (context) => const Friends_Page(),
         'profile_page': (context) => const ProfilePage(),

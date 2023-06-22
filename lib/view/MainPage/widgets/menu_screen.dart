@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:games_design/view/MainPage/friends.dart';
-import 'package:games_design/view/MainPage/game_page.dart';
+import 'package:games_design/view/MainPage/game.dart';
 import 'package:games_design/view/MainPage/home_page.dart';
 import 'package:games_design/view/MainPage/profile.dart';
 import 'package:games_design/view/MainPage/utils/custom_text_field.dart';
@@ -174,7 +174,7 @@ class _MenuScreenState extends State<MenuScreen> {
           body: TabBarView(
             children: [
               Container(child: HomePage()),
-              Container(child: GamePage()),
+              Container(child: Game()),
               Container(child: Friends_Page()),
               Container(child: ProfilePage()),
             ],
