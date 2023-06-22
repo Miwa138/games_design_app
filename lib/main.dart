@@ -4,7 +4,7 @@ import 'package:games_design/view/MainPage/friends.dart';
 import 'package:games_design/view/MainPage/games.dart';
 import 'package:games_design/view/MainPage/games_organizers_personal.dart';
 import 'package:games_design/view/MainPage/games_organizers_tournament.dart';
-import 'package:games_design/view/MainPage/splash_screen.dart';
+import 'package:games_design/view/MainPage/widgets/splash_screen.dart';
 import 'package:games_design/view/MainPage/profile.dart';
 
 
