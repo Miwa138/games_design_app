@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class GamesTable extends StatefulWidget {
-  const GamesTable({super.key});
+class GamesTableWidget extends StatefulWidget {
+  const GamesTableWidget({super.key});
 
   @override
-  State<GamesTable> createState() => _GamesTableState();
+  State<GamesTableWidget> createState() => _GamesTableWidgetState();
 }
 
-class _GamesTableState extends State<GamesTable> {
+class _GamesTableWidgetState extends State<GamesTableWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(

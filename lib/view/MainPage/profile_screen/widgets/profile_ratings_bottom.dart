@@ -1,15 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ProfileRatingsBottom extends StatelessWidget {
-  const ProfileRatingsBottom({super.key});
+class ProfileRatingsBottomWidget extends StatelessWidget {
+  const ProfileRatingsBottomWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-        color: Color(0xffb369b87),
-
+        color: Color(0xffb54aa99),
       ),
       child: Column(
         children: [
@@ -60,7 +59,6 @@ class ProfileRatingsBottom extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 14.0, top: 10),
             child: Container(
               decoration: const BoxDecoration(
-                color: Color(0xffb369b87),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,

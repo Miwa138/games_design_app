@@ -21,19 +21,10 @@ class _GameScreenState extends State<GameScreen> {
         backgroundColor: Colors.white,
         body: ListView(
           children: <Widget>[
-            const SizedBox(
-              height: 10,
-            ),
-            const ButtonGames(),
-            const SizedBox(
-              height: 20,
-            ),
-            TitleGames(),
-            const GamesTable(),
-            const SizedBox(
-              height: 10,
-            ),
-            const Pagination(),
+            const ButtonGamesWidget(),
+            TitleGamesWidget(),
+            const GamesTableWidget(),
+            const PaginationWidget(),
           ],
         ),
       ),

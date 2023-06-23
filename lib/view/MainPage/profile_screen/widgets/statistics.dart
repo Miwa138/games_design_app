@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Statistics extends StatelessWidget {
-  const Statistics({super.key});
+class StatisticsWidget extends StatelessWidget {
+  const StatisticsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: const BoxDecoration(
           color: Color(0xffb369b87),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(10.0),
             topRight: Radius.circular(10.0),
+            bottomLeft: Radius.circular(10),
+            bottomRight: Radius.circular(10),
           ),
         ),
         child: Container(
@@ -25,7 +27,8 @@ class Statistics extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        SizedBox(width: MediaQuery.of(context).size.width / 3.3),
+                        SizedBox(
+                            width: MediaQuery.of(context).size.width / 3.3),
                         Container(
                           alignment: Alignment.center,
                           width: 150,
@@ -45,22 +48,69 @@ class Statistics extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 100,
-                    child: Column(
+              Container(
+                height: 100,
+                decoration: const BoxDecoration(
+                  color: Color(0xffbf5f5f5),
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        SizedBox(width: MediaQuery.of(context).size.width / 1.3),
                         Container(
-                          child: Text("Статистика"),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                  width:
+                                      MediaQuery.of(context).size.width / 15),
+                              Container(
+                                alignment: Alignment.center,
+                                width: 150,
+                                child: const Padding(
+                                  padding: EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Лучший рейтинг:',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 15),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                  width:
+                                      MediaQuery.of(context).size.width / 10),
+                              Container(
+                                alignment: Alignment.center,
+                                width: 150,
+                                child: const Padding(
+                                  padding: EdgeInsets.all(8.0),
+                                  child: Text(
+                                    'Медальки:',
+                                    style: TextStyle(
+                                        color: Colors.black, fontSize: 15),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
-                  ),
-                ],
-              )
+                  ],
+                ),
+              ),
             ],
           ),
         ),

@@ -4,7 +4,6 @@ import 'package:games_design/view/MainPage/friends_screen/widgets/friends_table.
 import 'package:games_design/view/MainPage/friends_screen/widgets/title_friends.dart';
 import 'package:games_design/view/MainPage/utils/button/button_friends/button_widget.dart';
 
-
 class FriendsScreen extends StatefulWidget {
   const FriendsScreen({Key? key}) : super(key: key);
 
@@ -21,15 +20,9 @@ class _FriendsScreenState extends State<FriendsScreen> {
         backgroundColor: Colors.white,
         body: ListView(
           children: <Widget>[
-            const SizedBox(
-              height: 10,
-            ),
-            const ButtonFriends(),
-            const SizedBox(
-              height: 20,
-            ),
-            TitleFriends(),
-            const FriendsTable(),
+            const ButtonFriendsWidget(),
+            TitleFriendsWidget(),
+            const FriendsTableWidget(),
           ],
         ),
       ),

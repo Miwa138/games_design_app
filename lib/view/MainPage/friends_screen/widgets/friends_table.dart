@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:games_design/view/MainPage/friends_screen/widgets/avatar_class.dart';
 
-class FriendsTable extends StatefulWidget {
-  const FriendsTable({super.key});
+class FriendsTableWidget extends StatefulWidget {
+  const FriendsTableWidget({super.key});
 
   @override
-  State<FriendsTable> createState() => _FriendsTableState();
+  State<FriendsTableWidget> createState() => _FriendsTableWidgetState();
 }
 
-class _FriendsTableState extends State<FriendsTable> {
+class _FriendsTableWidgetState extends State<FriendsTableWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(

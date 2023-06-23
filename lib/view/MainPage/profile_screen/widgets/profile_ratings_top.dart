@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ProfileRatingsTop extends StatelessWidget {
-  const ProfileRatingsTop({super.key});
+class ProfileRatingsTopWidget extends StatelessWidget {
+  const ProfileRatingsTopWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/MediumWidget.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_bottom.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_top.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/statistics.dart';
@@ -17,10 +18,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
       body: ListView(
         children: const <Widget>[
-          TopMenu(),
-          ProfileRatingsTop(),
-          ProfileRatingsBottom(),
-          Statistics(),
+          TopMenuWidget(),
+          ProfileRatingsTopWidget(),
+          ProfileRatingsBottomWidget(),
+          StatisticsWidget(),
+          MediumWidget(),
           // GameRatings(),
         ],
       ),
