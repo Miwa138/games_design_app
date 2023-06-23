@@ -15,11 +15,12 @@ class _TableState extends State<Table> {
       child: Column(
         children: <Widget>[
           Expanded(
-            child: Image.network("https://yandex.ru/images/search?source=morda&text=Косатка&pos=1&rpt=simage&img_url=https%3A%2F%2Fsun9-75.userapi.com%2Fimpg%2F7CTOIR2Neyh76F-AEbUDvbuwN273vycHdqXV_w%2FOKdaUJchg_w.jpg%3Fsize%3D537x240%26quality%3D96%26sign%3Db9b1db5aa73fff0dc1ce418ff5a81b27%26type%3Dshare&nl=1&lr=20097"),
+            child: Image.network(
+                "https://yandex.ru/images/search?source=morda&text=Косатка&pos=1&rpt=simage&img_url=https%3A%2F%2Fsun9-75.userapi.com%2Fimpg%2F7CTOIR2Neyh76F-AEbUDvbuwN273vycHdqXV_w%2FOKdaUJchg_w.jpg%3Fsize%3D537x240%26quality%3D96%26sign%3Db9b1db5aa73fff0dc1ce418ff5a81b27%26type%3Dshare&nl=1&lr=20097"),
           ),
           Container(
-            padding: EdgeInsets.all(10),
-            child: Text("Text"),
+            padding: const EdgeInsets.all(10),
+            child: const Text("Text"),
           )
         ],
       ),

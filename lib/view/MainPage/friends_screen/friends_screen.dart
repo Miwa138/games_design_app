@@ -23,15 +23,15 @@ class _FriendsScreenState extends State<FriendsScreen> {
         backgroundColor: Colors.white,
         body: ListView(
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            ButtonFriends(),
-            SizedBox(
+            const ButtonFriends(),
+            const SizedBox(
               height: 20,
             ),
             TitleRowFriends(),
-            FriendsTable(),
+            const FriendsTable(),
           ],
         ),
       ),

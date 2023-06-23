@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-
-class CustomTextField extends StatefulWidget
-{
+class CustomTextField extends StatefulWidget {
   TextEditingController? textEditingController;
   IconData? iconData;
   String? hintText;
@@ -21,13 +19,9 @@ class CustomTextField extends StatefulWidget
   State<CustomTextField> createState() => _CustomTextFieldState();
 }
 
-
-
-class _CustomTextFieldState extends State<CustomTextField>
-{
+class _CustomTextFieldState extends State<CustomTextField> {
   @override
-  Widget build(BuildContext context)
-  {
+  Widget build(BuildContext context) {
     return SizedBox(
       height: 40,
       child: Padding(

@@ -16,19 +16,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
         title: const Text("Профиль"),
       ),
       body: ListView(
-        children: <Widget>[
+        children: const <Widget>[
           // const SearchScreen(),
           SizedBox(
 
-            // child: ScrollScreen(),
-          ),
-          Container(
-            child: const Column(
-              children: [
-                // PlayerScreen(),
-                // CircleButton(),
-              ],
-            ),
+              // child: ScrollScreen(),
+              ),
+          Column(
+            children: [
+              // PlayerScreen(),
+              // CircleButton(),
+            ],
           ),
         ],
       ),

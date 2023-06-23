@@ -14,7 +14,12 @@ class _ButtonGamesState extends State<ButtonGames> {
   Widget build(BuildContext context) {
     return SizedBox(
       width: Helper.getScreenWidth(context) * 0.96,
-      child: RoundedButton(text: 'Игры',   press: (){}, color: Color(0xffb369b87), buttonSize: 20,),
+      child: RoundedButton(
+        text: 'Игры',
+        press: () {},
+        color: const Color(0xffb369b87),
+        buttonSize: 20,
+      ),
     );
   }
 }
