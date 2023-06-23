@@ -90,7 +90,7 @@ class StatisticsWidget extends StatelessWidget {
                             children: [
                               SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width / 10),
+                                      MediaQuery.of(context).size.width / 25),
                               Container(
                                 alignment: Alignment.center,
                                 width: 150,

@@ -20,7 +20,7 @@ class TitleGamesWidget extends StatelessWidget {
               Container(
                 alignment: Alignment.centerLeft,
                 width: 85,
-                child: const Text('Дата/Время', style: TextStyle(color: Colors.white),),
+                child: const Text('Дата/Время', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width / 18,
@@ -29,7 +29,7 @@ class TitleGamesWidget extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 width: 75,
                 child: const Text(
-                  'Соперник', style: TextStyle(color: Colors.white),
+                  'Соперник', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
               SizedBox(
@@ -39,7 +39,7 @@ class TitleGamesWidget extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 width: 38,
                 child: const Text(
-                  'Счет', style: TextStyle(color: Colors.white),
+                  'Счет', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
               SizedBox(

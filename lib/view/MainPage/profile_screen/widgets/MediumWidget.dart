@@ -26,54 +26,48 @@ class MediumWidget extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 4),
                   child: Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(width: MediaQuery.of(context).size.width / 40),
-                        Container(
-                          alignment: Alignment.centerLeft,
-                          width: 70,
-                          child: const Padding(
-                            padding: EdgeInsets.all(5.0),
-                            child: Text(
+                    child: Padding(
+                      padding: const EdgeInsets.all(3.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          SizedBox(width: MediaQuery.of(context).size.width / 40),
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            width: 70,
+                            child: const Text(
                               'Статус:',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 17),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                            width: MediaQuery.of(context).size.width / 250),
-                        Container(
-                          alignment: Alignment.centerLeft,
-                          width: 120,
-                          child: const Padding(
-                            padding: EdgeInsets.all(5.0),
-                            child: Text(
+                          SizedBox(
+                              width: MediaQuery.of(context).size.width / 250),
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            width: 120,
+                            child: const Text(
                               'Организатор',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 18),
+                                  fontSize: 16),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                            width: MediaQuery.of(context).size.width / 100),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 35.0),
-                          child: Container(
-                            width: 120,
+                          SizedBox(
+                              width: MediaQuery.of(context).size.width / 160),
+                          SizedBox(
+                            width: 130,
                             height: 30,
                             child: RoundedButton(
-                              text: "Анонс труда",
-                              color: Color(0xffbf3ae37),
+                              text: "Анонс турнира",
+                              color: const Color(0xffbf3ae37),
                               press: () {},
                               buttonSize: 2,
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 )

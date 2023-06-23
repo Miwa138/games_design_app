@@ -28,7 +28,7 @@ class _FriendsTableWidgetState extends State<FriendsTableWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    SizedBox(width: MediaQuery.of(context).size.width / 22),
+                    SizedBox(width: MediaQuery.of(context).size.width / 20),
                     Container(
                       alignment: Alignment.centerLeft,
                       width: 80,
@@ -55,7 +55,7 @@ class _FriendsTableWidgetState extends State<FriendsTableWidget> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 15,
+                      width: MediaQuery.of(context).size.width / 14,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,

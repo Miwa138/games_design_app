@@ -23,7 +23,7 @@ class TitleFriendsWidget extends StatelessWidget {
                 alignment: Alignment.center,
                 width: 75,
                 child: const Text(
-                  'Соперник', style: TextStyle(color: Colors.black),
+                  'Соперник', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                 ),
               ),
               SizedBox(
@@ -33,7 +33,7 @@ class TitleFriendsWidget extends StatelessWidget {
                 alignment: Alignment.center,
                 width: 38,
                 child: const Text(
-                  'Счет', style: TextStyle(color: Colors.black),
+                  'Счет', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
                 ),
               ),
               SizedBox(
@@ -41,8 +41,8 @@ class TitleFriendsWidget extends StatelessWidget {
               ),
               Container(
                 alignment: Alignment.center,
-                width: 35,
-                child: const Text("Игры", style: TextStyle(color: Colors.black),
+                width: 40,
+                child: const Text("Игры", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
               ),),
             ],
           ),
