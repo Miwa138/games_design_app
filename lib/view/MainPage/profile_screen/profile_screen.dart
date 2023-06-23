@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_bottom.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_top.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/statistics.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/top_menu.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           TopMenu(),
           ProfileRatingsTop(),
           ProfileRatingsBottom(),
-          // Subscriptions(),
+          Statistics(),
           // GameRatings(),
         ],
       ),
