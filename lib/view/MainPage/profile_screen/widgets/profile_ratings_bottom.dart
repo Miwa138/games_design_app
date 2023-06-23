@@ -1,29 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class TitleGames extends StatelessWidget {
+class ProfileRatingsBottom extends StatelessWidget {
+  const ProfileRatingsBottom({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          color: Color(0xffb369b87),
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0))),
+          color: Color(0xffb54aa99),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            SizedBox(width: MediaQuery.of(context).size.width / 27),
+
             Container(
-              alignment: Alignment.centerLeft,
-              width: 85,
-              child: const Text('Дата/Время', style: TextStyle(color: Colors.white),),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width / 18,
-            ),
-            Container(
+              height: 50,
               alignment: Alignment.centerLeft,
               width: 75,
               child: const Text(
@@ -31,7 +25,7 @@ class TitleGames extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: MediaQuery.of(context).size.width / 13,
+              width: MediaQuery.of(context).size.width / 9,
             ),
             Container(
               alignment: Alignment.centerLeft,
@@ -41,14 +35,14 @@ class TitleGames extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: MediaQuery.of(context).size.width / 9,
+              width: MediaQuery.of(context).size.width / 12,
             ),
             Container(
               alignment: Alignment.centerLeft,
               width: 10,
               child: const Icon(
                 CupertinoIcons.arrowtriangle_up, color: Colors.white, size: 15,),
-              ),
+            ),
           ],
         ),
       ),

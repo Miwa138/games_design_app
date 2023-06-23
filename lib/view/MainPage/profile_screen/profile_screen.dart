@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_bottom.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_top.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/top_menu.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -11,23 +14,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("Профиль"),
-      ),
       body: ListView(
         children: const <Widget>[
-          // const SearchScreen(),
-          SizedBox(
-
-              // child: ScrollScreen(),
-              ),
-          Column(
-            children: [
-              // PlayerScreen(),
-              // CircleButton(),
-            ],
-          ),
+          TopMenu(),
+          ProfileRatingsTop(),
+          ProfileRatingsBottom(),
+          // Subscriptions(),
+          // GameRatings(),
         ],
       ),
     );

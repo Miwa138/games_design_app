@@ -1,49 +1,47 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class TitleRowFriends extends StatelessWidget {
+class TitleFriends extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
+          color: Color(0xffb369b87),
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0))),
       child: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: Table(
-          columnWidths: const {
-            0: FlexColumnWidth(5),
-            1: FlexColumnWidth(4),
-            2: FlexColumnWidth(3),
-          },
-          // border: TableBorder.all(color: Colors.black),
-          children: const [
-            TableRow(children: [
-              Padding(
-                padding: EdgeInsets.only(left: 78),
-                child: Text(
-                  'Соперник',
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold),
-                ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 4,
+            ),
+            Container(
+              alignment: Alignment.center,
+              width: 75,
+              child: const Text(
+                'Соперник', style: TextStyle(color: Colors.black),
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 42),
-                child: Text(
-                  'Рейтинг',
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold),
-                ),
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 14,
+            ),
+            Container(
+              alignment: Alignment.center,
+              width: 38,
+              child: const Text(
+                'Счет', style: TextStyle(color: Colors.black),
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 35),
-                child: Text(
-                  'Игры',
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold),
-                ),
-              ),
-            ]),
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width / 9,
+            ),
+            Container(
+              alignment: Alignment.center,
+              width: 35,
+              child: const Text("Игры", style: TextStyle(color: Colors.black),
+            ),),
           ],
         ),
       ),

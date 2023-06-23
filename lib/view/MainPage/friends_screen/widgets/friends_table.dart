@@ -28,14 +28,14 @@ class _FriendsTableState extends State<FriendsTable> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    SizedBox(width: MediaQuery.of(context).size.width / 25),
+                    SizedBox(width: MediaQuery.of(context).size.width / 22),
                     Container(
                       alignment: Alignment.centerLeft,
                       width: 80,
                       child: const CircleAvatarClass(),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 112,
+                      width: MediaQuery.of(context).size.width / 22,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,
@@ -45,7 +45,7 @@ class _FriendsTableState extends State<FriendsTable> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 11,
+                      width: MediaQuery.of(context).size.width / 20,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,
@@ -55,7 +55,7 @@ class _FriendsTableState extends State<FriendsTable> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 7.8,
+                      width: MediaQuery.of(context).size.width / 15,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,

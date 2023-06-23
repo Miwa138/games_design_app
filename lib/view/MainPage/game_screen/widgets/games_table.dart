@@ -27,14 +27,14 @@ class _GamesTableState extends State<GamesTable> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    SizedBox(width: MediaQuery.of(context).size.width / 18),
+                    SizedBox(width: MediaQuery.of(context).size.width / 14),
                     Container(
                       alignment: Alignment.centerLeft,
                       width: 85,
                       child: const Text('25:04 10:00'),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 9,
+                      width: MediaQuery.of(context).size.width / 15,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,
@@ -44,7 +44,7 @@ class _GamesTableState extends State<GamesTable> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 7.3,
+                      width: MediaQuery.of(context).size.width / 15,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,
@@ -54,7 +54,7 @@ class _GamesTableState extends State<GamesTable> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 9,
+                      width: MediaQuery.of(context).size.width / 7,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,

@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class TitleGames extends StatelessWidget {
+class ProfileRatingsTop extends StatelessWidget {
+  const ProfileRatingsTop({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -48,7 +50,7 @@ class TitleGames extends StatelessWidget {
               width: 10,
               child: const Icon(
                 CupertinoIcons.arrowtriangle_up, color: Colors.white, size: 15,),
-              ),
+            ),
           ],
         ),
       ),
