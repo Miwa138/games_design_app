@@ -57,7 +57,7 @@ class _GamesTableState extends State<GamesTable> {
                 '12',),),
             ],),
           ),);
-      }, itemCount: 13,),),
+      }, itemCount: 20,),),
     );
   }
 }
