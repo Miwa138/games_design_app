@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:games_design/view/MainPage/friends.dart';
-import 'package:games_design/view/MainPage/game.dart';
-import 'package:games_design/view/MainPage/home_page.dart';
-import 'package:games_design/view/MainPage/profile.dart';
+import 'package:games_design/view/MainPage/friends_screen/friends_screen.dart';
+import 'package:games_design/view/MainPage/game_screen/game_screen.dart';
+import 'package:games_design/view/MainPage/home_screen/home_screen.dart';
+import 'package:games_design/view/MainPage/profile_screen/profile_screen.dart';
 import 'package:games_design/view/MainPage/utils/custom_text_field.dart';
 import 'package:games_design/view/MainPage/utils/media_query_class.dart';
 import 'package:games_design/view/MainPage/widgets/menu.dart';
@@ -173,10 +173,10 @@ class _MenuScreenState extends State<MenuScreen> {
           bottomNavigationBar: menu(),
           body: TabBarView(
             children: [
-              Container(child: HomePage()),
-              Container(child: Game()),
-              Container(child: Friends_Page()),
-              Container(child: ProfilePage()),
+              Container(child: HomeScreen()),
+              Container(child: GameScreen()),
+              Container(child: FriendsScreen()),
+              Container(child: ProfileScreen()),
             ],
           ),
           floatingActionButton: FloatingActionButton(

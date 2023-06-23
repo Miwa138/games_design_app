@@ -14,7 +14,7 @@ class _ButtonFriendsState extends State<ButtonFriends> {
   Widget build(BuildContext context) {
     return SizedBox(
       width: Helper.getScreenWidth(context) * 0.96,
-      child: RoundedButton(text: 'Друзья',   press: (){}, color: Color(0xffb369b87),),
+      child: RoundedButton(text: 'Друзья', press: (){}, color: Color(0xffb369b87), buttonSize: 20,),
     );
   }
 }

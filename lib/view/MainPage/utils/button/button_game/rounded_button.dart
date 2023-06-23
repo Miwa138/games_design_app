@@ -9,7 +9,7 @@ class RoundedButton extends StatelessWidget {
       {required this.text,
         required this.press,
         this.color = Colors.black54,
-        this.textColor = Colors.white});
+        this.textColor = Colors.white, required int buttonSize});
 
   @override
   Widget build(BuildContext context) {
