@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../utils/button/button_friends/rounded_button.dart';
 
-class ActiveSubscription extends StatelessWidget {
-  const ActiveSubscription({super.key});
+class ActiveSubscriptionWidget extends StatelessWidget {
+  const ActiveSubscriptionWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

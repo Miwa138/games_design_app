@@ -17,11 +17,11 @@ class TopMenuWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 IconButton(
-                  icon: const Icon(CupertinoIcons.multiply_square, color: Color(0xffb369b87),),
+                  icon: Icon(CupertinoIcons.multiply_square, color: Color(0xffb369b87),),
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: const Icon(CupertinoIcons.slider_horizontal_3, color: Color(0xffb369b87),),
+                  icon: Icon(CupertinoIcons.slider_horizontal_3, color: Color(0xffb369b87),),
                   onPressed: () {},
                 ),
               ],

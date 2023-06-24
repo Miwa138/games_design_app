@@ -63,7 +63,7 @@ class MediumWidget extends StatelessWidget {
                               text: "Анонс турнира",
                               color: const Color(0xffbf3ae37),
                               press: () {},
-                              fontSize: 15,
+                              fontSize: 14,
                             ),
                           ),
                         ],
