@@ -11,24 +11,24 @@ class RoundedButton extends StatelessWidget {
     required this.press,
     this.color = Colors.black54,
     this.textColor = Colors.white,
-    this.fontSize = 20,
+    required this.fontSize,
   });
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        primary: color,
-        onPrimary: textColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-      ),
-      onPressed: press,
-      child: Text(
-        text!,
-        style: TextStyle(
-          fontSize: fontSize,
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 1),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: color,
+          ),
+          onPressed: press,
+          child: Text(
+            text!,
+            style: TextStyle(color: textColor, fontSize: fontSize),
+          ),
         ),
       ),
     );

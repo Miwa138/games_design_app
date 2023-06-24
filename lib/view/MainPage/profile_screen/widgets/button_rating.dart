@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:games_design/view/MainPage/utils/button/button_game/rounded_button.dart';
+import 'package:games_design/view/MainPage/utils/button/button_friends/rounded_button.dart';
 
-class MediumWidget extends StatelessWidget {
-  const MediumWidget({super.key});
+class ButtonRating extends StatelessWidget {
+  const ButtonRating({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,41 +29,30 @@ class MediumWidget extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SizedBox(width: MediaQuery.of(context).size.width / 40),
-                          Container(
-                            alignment: Alignment.centerLeft,
-                            width: 70,
-                            child: const Text(
-                              'Статус:',
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 17),
-                            ),
-                          ),
                           SizedBox(
-                              width: MediaQuery.of(context).size.width / 250),
+                              width: MediaQuery.of(context).size.width /9),
                           Container(
-                            alignment: Alignment.centerLeft,
                             width: 120,
-                            child: const Text(
-                              'Организатор',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16),
-                            ),
-                          ),
-                          SizedBox(
-                              width: MediaQuery.of(context).size.width / 160),
-                          SizedBox(
-                            width: 130,
-                            height: 30,
+                            height: 25,
                             child: RoundedButton(
-                              text: "Анонс турнира",
+                              text: "Граф. рейт.",
                               color: const Color(0xffbf3ae37),
                               press: () {},
-                              fontSize: 15,
+                              fontSize: 14,
+                            ),
+                          ),
+                          SizedBox(
+                              width: MediaQuery.of(context).size.width / 20),
+                         Container(
+                            width: 120,
+                            height: 25,
+                            child: RoundedButton(
+                              text: "Соседи рейт",
+                              color: const Color(0xffbf3ae37),
+                              press: () {},
+                              fontSize: 14,
                             ),
                           ),
                         ],

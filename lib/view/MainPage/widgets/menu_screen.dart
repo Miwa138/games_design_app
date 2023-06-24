@@ -6,6 +6,7 @@ import 'package:games_design/view/MainPage/home_screen/home_screen.dart';
 import 'package:games_design/view/MainPage/profile_screen/profile_screen.dart';
 import 'package:games_design/view/MainPage/utils/custom_text_field.dart';
 import 'package:games_design/view/MainPage/utils/media_query_class.dart';
+import 'package:games_design/view/MainPage/utils/show_dialog.dart';
 import 'package:games_design/view/MainPage/widgets/menu.dart';
 
 class MenuScreen extends StatefulWidget {
@@ -171,21 +172,13 @@ class _MenuScreenState extends State<MenuScreen> {
         length: 4,
         child: Scaffold(
           bottomNavigationBar: menu(),
-          body: TabBarView(
+          body: const TabBarView(
             children: [
-              Container(child: HomeScreen()),
-              Container(child: GameScreen()),
-              Container(child: FriendsScreen()),
-              Container(child: ProfileScreen()),
+              HomeScreen(),
+              GameScreen(),
+              FriendsScreen(),
+              ProfileScreen(),
             ],
-          ),
-          floatingActionButton: FloatingActionButton(
-            backgroundColor: Color(0xffbf3ae37),
-            onPressed: () {
-              _showMyDialog();
-            },
-            tooltip: 'Increment',
-            child: const Icon(Icons.add),
           ),
         ),
       ),

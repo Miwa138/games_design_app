@@ -51,7 +51,7 @@ class ActiveSubscription extends StatelessWidget {
                 ],
               ),
               Container(
-                height: 100,
+                height: 130,
                 decoration: const BoxDecoration(
                   color: Color(0xffbf5f5f5),
                   borderRadius: BorderRadius.only(
@@ -92,10 +92,10 @@ class ActiveSubscription extends StatelessWidget {
                             children: [
                               SizedBox(
                                   width:
-                                  MediaQuery.of(context).size.width / 5),
+                                  MediaQuery.of(context).size.width / 6),
                               Container(
                                 alignment: Alignment.centerLeft,
-                                width: 120,
+                                width: 100,
                                 child: const Padding(
                                   padding: EdgeInsets.all(8.0),
                                   child: Text(
@@ -141,10 +141,10 @@ class ActiveSubscription extends StatelessWidget {
                             children: [
                               SizedBox(
                                   width:
-                                  MediaQuery.of(context).size.width / 8),
+                                  MediaQuery.of(context).size.width / 12),
                               Container(
                                 alignment: Alignment.centerLeft,
-                                width: 120,
+                                width: 100,
                                 child: const Padding(
                                   padding: EdgeInsets.all(8.0),
                                   child: Text(
@@ -157,25 +157,25 @@ class ActiveSubscription extends StatelessWidget {
                             ],
                           ),
                         ),
+
                       ],
                     ),
-
-                  ],
-                ),
-              ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                        width: MediaQuery.of(context).size.width / 26),
-                    SizedBox(
-                      width: 350,
-                      height: 40,
-                      child: RoundedButton(
-                        text: "Оформить подписку",
-                        color: const Color(0xffbf3ae37),
-                        press: () {},
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            width: 320,
+                            height: 40,
+                            child: RoundedButton(
+                              text: "Оформить подписку",
+                              color: const Color(0xffbf3ae37),
+                              press: () {},
+                              fontSize: 22,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],

@@ -21,7 +21,7 @@ class _ButtonGamesWidgetState extends State<ButtonGamesWidget> {
           text: 'Игры',
           press: () {},
           color: const Color(0xffb369b87),
-          buttonSize: 20,
+          fontSize: 20,
         ),
       ),
     );

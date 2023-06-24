@@ -49,7 +49,7 @@ class StatisticsWidget extends StatelessWidget {
                 ],
               ),
               Container(
-                height: 100,
+                height: 80,
                 decoration: const BoxDecoration(
                   color: Color(0xffbf5f5f5),
                   borderRadius: BorderRadius.only(

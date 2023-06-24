@@ -39,7 +39,7 @@ class ProfileRatingsTopWidget extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 14.0, top: 10),
+            padding: const EdgeInsets.only(bottom: 14.0,),
             child: Container(
               decoration: const BoxDecoration(
                 color: Color(0xffb369b87),
@@ -47,7 +47,7 @@ class ProfileRatingsTopWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SizedBox(width: MediaQuery.of(context).size.width / 6),
+                  SizedBox(width: MediaQuery.of(context).size.width / 6.5),
                   Container(
                     alignment: Alignment.center,
                     width: 300,

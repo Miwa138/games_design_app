@@ -21,7 +21,7 @@ class _ButtonFriendsWidgetState extends State<ButtonFriendsWidget> {
           text: 'Друзья',
           press: () {},
           color: const Color(0xffb369b87),
-          buttonSize: 20,
+          fontSize: 20,
         ),
       ),
     );
