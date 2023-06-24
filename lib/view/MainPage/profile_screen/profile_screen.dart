@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/button_rating.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/game_statistics.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/medium_widget.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/active_subcription.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/positioned_block.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_bottom.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_top.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/statistics.dart';
@@ -26,6 +28,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           StatisticsWidget(),
           MediumWidget(),
           ActiveSubscriptionWidget(),
+          ButtonRating(),
           GameStatisticsWidget(),
         ],
       ),

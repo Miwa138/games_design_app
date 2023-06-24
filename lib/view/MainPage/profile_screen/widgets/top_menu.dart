@@ -24,6 +24,7 @@ class TopMenuWidget extends StatelessWidget {
                   icon: Icon(CupertinoIcons.slider_horizontal_3, color: Color(0xffb369b87),),
                   onPressed: () {},
                 ),
+
               ],
             ),
           ],

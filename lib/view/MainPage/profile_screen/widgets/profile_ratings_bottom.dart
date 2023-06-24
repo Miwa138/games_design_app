@@ -18,7 +18,7 @@ class ProfileRatingsBottomWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SizedBox(width: MediaQuery.of(context).size.width / 2.95),
+                  SizedBox(width: MediaQuery.of(context).size.width / 2.9),
                   Container(
                     alignment: Alignment.centerRight,
                     width: 60,

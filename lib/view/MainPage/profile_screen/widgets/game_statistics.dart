@@ -29,7 +29,7 @@ class GameStatisticsWidget extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(
-                            width: MediaQuery.of(context).size.width / 3.3),
+                            width: MediaQuery.of(context).size.width / 3.5),
                         Container(
                           alignment: Alignment.center,
                           width: 150,
