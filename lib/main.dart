@@ -7,11 +7,6 @@ import 'package:games_design/view/MainPage/widgets/menu_screen.dart';
 import 'package:games_design/view/MainPage/profile_screen/profile_screen.dart';
 import 'view/MainPage/game_screen/widgets/games_organizers_personal.dart';
 
-
-
-
-
-
 void main() async {
 
   runApp(const MyApp());
@@ -29,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      home: MenuScreen(),
+      home: const MenuScreen(),
       routes: {
         'game_page': (context) => const GameScreen(),
         'splash_screen': (context) => const MenuScreen(),

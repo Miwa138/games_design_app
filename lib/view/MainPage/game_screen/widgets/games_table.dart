@@ -44,7 +44,7 @@ class _GamesTableWidgetState extends State<GamesTableWidget> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 15,
+                      width: MediaQuery.of(context).size.width / 13,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,
@@ -54,7 +54,7 @@ class _GamesTableWidgetState extends State<GamesTableWidget> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 7,
+                      width: MediaQuery.of(context).size.width / 7.5,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,

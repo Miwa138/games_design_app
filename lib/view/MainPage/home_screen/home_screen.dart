@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:games_design/view/MainPage/utils/show_dialog.dart';
+import 'package:games_design/view/MainPage/utils/FloatingButton.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         ],
       ),
-      floatingActionButton: const FloatingButton(),
+      floatingActionButton: FloatingButton(),
     );
   }
 }

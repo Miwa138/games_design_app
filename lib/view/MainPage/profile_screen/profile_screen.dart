@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/game_statistics.dart';
-import 'package:games_design/view/MainPage/profile_screen/widgets/MediumWidget.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/medium_widget.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/active_subcription.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_bottom.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/profile_ratings_top.dart';

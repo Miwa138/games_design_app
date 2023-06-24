@@ -45,7 +45,7 @@ class _FriendsTableWidgetState extends State<FriendsTableWidget> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width / 20,
+                      width: MediaQuery.of(context).size.width / 25,
                     ),
                     Container(
                       alignment: Alignment.centerLeft,
