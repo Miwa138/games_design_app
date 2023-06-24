@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:games_design/view/MainPage/game_screen/widgets/title_games.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/Button.dart';
 import 'package:games_design/view/MainPage/utils/FloatingButton.dart';
 import 'package:games_design/view/MainPage/utils/button/button_game/button_widget.dart';
 import 'package:games_design/view/MainPage/game_screen/widgets/games_table.dart';
@@ -23,6 +24,7 @@ class _GameScreenState extends State<GameScreen> {
         body: ListView(
           children: <Widget>[
             const ButtonGamesWidget(),
+            Button(),
             TitleGamesWidget(),
             const GamesTableWidget(),
             const PaginationWidget(),

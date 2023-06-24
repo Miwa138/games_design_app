@@ -14,7 +14,7 @@ class _ButtonFriendsWidgetState extends State<ButtonFriendsWidget> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 10.0),
-      child: Container(
+      child: SizedBox(
         height: 45,
         width: Helper.getScreenWidth(context) * 0.96,
         child: RoundedButton(

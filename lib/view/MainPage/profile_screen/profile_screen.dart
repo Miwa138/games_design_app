@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/profile_screen/widgets/button.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/button_rating.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/game_statistics.dart';
 import 'package:games_design/view/MainPage/profile_screen/widgets/medium_widget.dart';
