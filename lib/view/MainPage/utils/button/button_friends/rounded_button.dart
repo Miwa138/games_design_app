@@ -19,7 +19,7 @@ class RoundedButton extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 1),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(14),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: color,

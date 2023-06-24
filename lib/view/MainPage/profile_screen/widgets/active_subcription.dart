@@ -41,7 +41,7 @@ class ActiveSubscriptionWidget extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.normal,
-                                  fontSize: 16),
+                                  fontSize: 14),
                             ),
                           ),
                         ),
@@ -172,7 +172,7 @@ class ActiveSubscriptionWidget extends StatelessWidget {
                               text: "Оформить подписку",
                               color: const Color(0xffbf3ae37),
                               press: () {},
-                              fontSize: 22,
+                              fontSize: 18,
                             ),
                           ),
                         ],

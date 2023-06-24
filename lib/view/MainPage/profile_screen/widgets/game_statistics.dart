@@ -10,7 +10,7 @@ class GameStatisticsWidget extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: const BoxDecoration(
-          color: Color(0xffb369b87),
+          color: Color(0xffb54aa99),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(10.0),
             topRight: Radius.circular(10.0),
@@ -53,7 +53,7 @@ class GameStatisticsWidget extends StatelessWidget {
                 children: [
                   Container(
                     decoration: const BoxDecoration(
-                      color: Color(0xffb369b87),
+                      color: Color(0xffbf5f5f5),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(10.0),
@@ -68,7 +68,6 @@ class GameStatisticsWidget extends StatelessWidget {
                             child: const Text(
                               'Дата',
                               style: TextStyle(
-                                  color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -81,7 +80,6 @@ class GameStatisticsWidget extends StatelessWidget {
                             child: const Text(
                               'Соперник',
                               style: TextStyle(
-                                  color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -94,7 +92,6 @@ class GameStatisticsWidget extends StatelessWidget {
                             child: const Text(
                               'Счет',
                               style: TextStyle(
-                                  color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -106,7 +103,6 @@ class GameStatisticsWidget extends StatelessWidget {
                             width: 5,
                             child: const Icon(
                               CupertinoIcons.arrowtriangle_up,
-                              color: Colors.white,
                               size: 15,
                             ),
                           ),
@@ -119,7 +115,6 @@ class GameStatisticsWidget extends StatelessWidget {
                             child: const Text(
                               'Счет',
                               style: TextStyle(
-                                  color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),

@@ -71,18 +71,18 @@ class ProfileRatingsBottomWidget extends StatelessWidget {
                       '1100',
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14, fontWeight: FontWeight.bold),
+                          fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width / 8),
                   Container(
                     alignment: Alignment.centerRight,
-                    width: 60,
+                    width: 70,
                     child: const Text(
                       '+10-3=3',
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14, fontWeight: FontWeight.bold),
+                          fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width / 90),
@@ -93,7 +93,7 @@ class ProfileRatingsBottomWidget extends StatelessWidget {
                       '16',
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: 14, fontWeight: FontWeight.bold),
+                          fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
