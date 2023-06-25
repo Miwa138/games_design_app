@@ -21,10 +21,10 @@ class _FriendsScreenState extends State<FriendsScreen> {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: ListView(
-          children: <Widget>[
-            const ButtonFriendsWidget(),
+          children: const <Widget>[
+            ButtonFriendsWidget(),
             TitleFriendsWidget(),
-            const FriendsTableWidget(),
+            FriendsTableWidget(),
           ],
         ),
         floatingActionButton: FloatingButton(),

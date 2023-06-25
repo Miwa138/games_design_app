@@ -1,35 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:games_design/view/MainPage/utils/button/button_friends/rounded_button.dart';
 
-class Button extends StatefulWidget {
-  @override
-  _ButtonState createState() => _ButtonState();
-}
-
-class _ButtonState extends State<Button> {
-  bool _showSecondWidget = false;
+class Button extends StatelessWidget {
+  const Button({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ElevatedButton(
-          onPressed: () {
-            setState(() {
-              _showSecondWidget = !_showSecondWidget;
-            });
-          },
-          child: Text('Нажми меня'),
-        ),
-        if (_showSecondWidget)
-          Container(
-            width: 200,
-            height: 200,
-            color: Colors.blue,
-            child: Center(
-              child: Text('Я другой виджет'),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        child: Stack(
+          children: [
+            Positioned(
+              left: 1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    width: 200,
+                    height: 40,
+                    child: RoundedButton(
+                      text: "Личные",
+                      color: const Color(0xffbc58d2c),
+                      press: () {},
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-      ],
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                SizedBox(
+                  width: 200,
+                  height: 40,
+                  child: RoundedButton(
+                    text: "Турнирные",
+                    color: const Color(0xffbf3ae37),
+                    press: () {},
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

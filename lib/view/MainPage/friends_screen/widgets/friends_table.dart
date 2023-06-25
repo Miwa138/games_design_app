@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:games_design/view/MainPage/friends_screen/widgets/avatar_class.dart';
+import 'package:games_design/view/MainPage/friends_screen/widgets/circle_avatar_friends.dart';
 
 class FriendsTableWidget extends StatefulWidget {
   const FriendsTableWidget({super.key});
@@ -32,7 +32,7 @@ class _FriendsTableWidgetState extends State<FriendsTableWidget> {
                     Container(
                       alignment: Alignment.centerLeft,
                       width: 80,
-                      child: const CircleAvatarClass(),
+                      child: const CircleAvatarFriends(),
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 22,

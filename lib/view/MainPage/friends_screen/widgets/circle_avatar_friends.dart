@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
 
-class CircleAvatarClass extends StatelessWidget {
-  const CircleAvatarClass({super.key});
+class CircleAvatarFriends extends StatelessWidget {
+  const CircleAvatarFriends({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         CircleAvatar(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.transparent,
           radius: 20.0,
-          child: CircleAvatar(
-            radius: 20.0,
-            backgroundColor: Colors.white,
-            child: ClipOval(
-              child: Image.network(
-                'https://it.reg-nko.ru/wp-content/uploads/2022/12/7-kopiya.jpg',
-                fit: BoxFit.fill,
-              ),
+          child: ClipOval(
+            child: Image.network(
+              'https://it.reg-nko.ru/wp-content/uploads/2022/12/7-kopiya.jpg',
+              fit: BoxFit.fill,
             ),
           ),
         ),
